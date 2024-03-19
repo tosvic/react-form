@@ -25,27 +25,9 @@ function MyForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="username"
-        value={formData.username}
-        onChange={handleInputChange}
-        placeholder="Username"
-      />
-      <input
-        type="email"
-        name="email"
-        value={formData.email}
-        onChange={handleInputChange}
-        placeholder="Email"
-      />
-      <input
-        type="password"
-        name="password"
-        value={formData.password}
-        onChange={handleInputChange}
-        placeholder="Password"
-      />
+      <input type="text" name="username" value={formData.username} onChange={handleInputChange} placeholder="Username" />
+      <input type="email" name="email" value={formData.email} onChange={handleInputChange} placeholder="Email" />
+      <input type="password" name="password" value={formData.password} onChange={handleInputChange} placeholder="Password" />
       <button type="submit">Submit</button>
     </form>
   );
